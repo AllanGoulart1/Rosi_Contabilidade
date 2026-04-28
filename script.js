@@ -195,12 +195,6 @@ if (telefonInput) {
 // ANO DINÂMICO NO FOOTER
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Atualizar ano dinâmico no footer
-    const yearElement = document.getElementById('year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
     // Verificar se o navegador suporta Intersection Observer
     if (!('IntersectionObserver' in window)) {
         console.warn('Intersection Observer não suportado. Algumas animações podem não funcionar.');
